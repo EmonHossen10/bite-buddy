@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Tools from "./Tools";
 
 export default function Home() {
   return (
@@ -6,6 +7,8 @@ export default function Home() {
       <h2>This is next app</h2>
       <h2>This is next app 2</h2>
       <h2>This is next app 3</h2>
+
+      <Tools></Tools>
     </main>
   );
 }
