@@ -3,8 +3,8 @@ import React from "react";
 const ButtonHooks = ({ text }) => {
   return (
     <div
-      style={{ fontSize: "26px" }}
-      className="btn   bg-gradient-to-r from-[#FF8436] to-[#FF0A04] my-10 text-white px-20"
+      // style={{ fontSize: "20px" }}
+      className="btn bg-gradient-to-r from-[#FF8436] to-[#FF0A04]   text-white px-20  "
     >
       {text}
     </div>
