@@ -1,4 +1,5 @@
 import Chef from "@/Components/layout/Chef";
+import Footer from "@/Components/layout/Footer";
 import Header from "@/Components/layout/Header";
 import Hero from "@/Components/layout/Hero";
 import HomeMenu from "@/Components/layout/HomeMenu";
@@ -16,6 +17,7 @@ export default function Home() {
         <OrderProcess></OrderProcess>
       </main>
       <Chef></Chef>
+      <Footer></Footer>
     </>
   );
 }
