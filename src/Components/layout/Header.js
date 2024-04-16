@@ -7,28 +7,30 @@ import Link from "next/link";
 const Header = () => {
   const navlinks = (
     <>
-      <li>
-        <Link href="/">Home</Link>
-      </li>
-      <li>
-        <Link href="/">Menu</Link>
-      </li>
-      <li>
-        <Link href="/">About</Link>
-      </li>
-      <li>
-        <Link href="/">Contact</Link>
-      </li>
+        <li>
+          <Link href="/">Home</Link>
+        </li>
+        <li>
+          <Link href="/">Menu</Link>
+        </li>
+        <li>
+          <Link href="/">About</Link>
+        </li>
+        <li>
+          <Link href="/">Contact</Link>
+        </li>
+        {/* <li>
+          <Link href="/profile">Profile</Link>
+        </li> */}
       <li>
         <Link
-
-        className="  bg-primary hover:bg-[#ff8482]"
+          className="  bg-primary hover:bg-[#ff8482]"
           href="/"
           style={{
             display: "inline-block",
             width: "auto",
             height: "auto",
-             
+
             color: "#fff",
             padding: "10px 50px",
             borderRadius: "0",

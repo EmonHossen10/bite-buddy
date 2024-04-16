@@ -1,5 +1,5 @@
 import AboutUs from "@/Components/AboutUs/AboutUs";
-import SectionTitle from "@/Components/Shared/SectionTitle/SectionTitle";
+import Profile from "@/Components/Profile/Profile";
 import Header from "@/Components/layout/Header";
 import Hero from "@/Components/layout/Hero";
 
