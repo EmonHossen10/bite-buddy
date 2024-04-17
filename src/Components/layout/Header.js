@@ -14,13 +14,16 @@ const Header = () => {
         <Link href="/">Menu</Link>
       </li>
       <li>
-        <Link href="/">About</Link>
+        <Link href="/about">About</Link>
       </li>
       <li>
         <Link href="/">Contact</Link>
       </li>
+
       <li>
-        <Link className="relative md:left-56" href="/register">Register</Link>
+        <Link className="relative md:left-56" href="/register">
+          Register
+        </Link>
       </li>
     </>
   );
@@ -60,7 +63,7 @@ const Header = () => {
         />
       </div>
       <div className="navbar-end hidden lg:flex">
-        <ul className="menu w-[500px] text-gray-500  font-semibold menu-horizontal px-1">
+        <ul className="menu  border w-[500px] text-gray-500  font-semibold menu-horizontal px-1">
           {navlinks}
         </ul>
       </div>
