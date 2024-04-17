@@ -1,46 +1,67 @@
-'use client'
+"use client";
+function RegisterPage() {
+  const handelRegister = async (e) => {
+    e.preventDefault();
 
+    const form = e.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const password = form.password.value;
 
-function RegisterPage () {
+    console.log("Name:", name, "Email:", email, "Password:", password);
 
-    const handelRegister = async e => {
-        e.preventDefault();
-
-        const form = e.target;
-        const name = form.name.value;
-        const email = form.email.value;
-        const password = form.password.value;
-
-
-        console.log("Name:", name, "Email:", email, "Password:", password);
-
-        const response = await fetch('/api/register', {
-            method: 'POST',
-            body: JSON.stringify({email, password}),
-            headers: {'Content-Type': 'application/json'}
-        });
-
-    }
+    // const response = await fetch("/api/register", {
+    //   method: "POST",
+    //   body: JSON.stringify({ email, password }),
+    //   headers: { "Content-Type": "application/json" },
+    // });
+  };
 
   return (
-    <section className='bg-white h-screen '>
-        <div className=''>
-            <h1>Register</h1>
-            <form className='' onSubmit={handelRegister}>
-                <label>Name</label><br />
-                <input className='' name='name' type='text'/><br />
-
-                <label>Email</label><br />
-                <input className='' name='email' type='email'/><br />
-
-                <label>Password</label><br />
-                <input className='' name='password' type='password'/><br />
-
-                <button className="btn btn-primary">Register Naw!</button>
-            </form>
+    <div className="hero min-h-screen bg-base-200">
+      <div className="hero-content flex-col">
+        <div className="text-center lg:text-left">
+          <h1 className="text-5xl font-bold">Register now!</h1>
         </div>
-    </section>
-  )
+        <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <form onSubmit={handelRegister} className="card-body">
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Email</span>
+              </label>
+              <input
+                type="email"
+                placeholder="email"
+                name="email"
+                className="input input-bordered"
+                required
+              />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Password</span>
+              </label>
+              <input
+                type="password"
+                placeholder="password"
+                name="password"
+                className="input input-bordered"
+                required
+              />
+              <label className="label">
+                <a href="#" className="label-text-alt link link-hover">
+                  Forgot password?
+                </a>
+              </label>
+            </div>
+            <div className="form-control mt-6">
+              <button className="btn btn-primary">Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default RegisterPage
+export default RegisterPage;

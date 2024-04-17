@@ -1,5 +1,6 @@
+import SectionTitle from "@/Components/Shared/SectionTitle/SectionTitle";
 import React from "react";
-import SectionTitle from "../Shared/SectionTitle/SectionTitle";
+// import SectionTitle from "../Shared/SectionTitle/SectionTitle";
 
 const AboutUs = () => {
   return (
