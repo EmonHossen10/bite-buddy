@@ -8,7 +8,10 @@ import step from "/public/asset/step-illustration.png";
 import boy from "/public/asset/boy.png";
 import road from "/public/asset/road.png";
 import img3 from "/public/asset/img3.jpg";
-import cash from '/public/asset/cash.png'
+import cash from "/public/asset/cash.png";
+
+
+
 
 const OrderProcess = () => {
   return (
@@ -76,19 +79,23 @@ const OrderProcess = () => {
         </div>
         {/* images */}
         <div>
-        <Image src={img3} alt="pic" className="w-[600px] h-[450px]"></Image>
+          <Image src={img3} alt="pic" className="w-[600px] h-[450px]"></Image>
         </div>
       </div>
       <hr className="mt-10" />
       {/* box-4 */}
       <div className="mt-20 flex flex-col md:flex-row justify-between items-center">
         <div>
-          <h2 className="text-4xl font-bold  mb-8">Pay Cashless for your <br /> Food</h2>
-          <p className="text-gray-500 ">Dont have any cash? <br /> No worries! Pay digitally instead of cash.</p>
+          <h2 className="text-4xl font-bold  mb-8">
+            Pay Cashless for your <br /> Food
+          </h2>
+          <p className="text-gray-500 ">
+            Dont have any cash? <br /> No worries! Pay digitally instead of
+            cash.
+          </p>
         </div>
         <div>
-        <Image src={cash} alt="pic" className="w-[600px] h-[450px]"></Image>
-
+          <Image src={cash} alt="pic" className="w-[600px] h-[450px]"></Image>
         </div>
       </div>
     </section>

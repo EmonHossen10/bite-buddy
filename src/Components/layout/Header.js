@@ -20,22 +20,7 @@ const Header = () => {
         <Link href="/">Contact</Link>
       </li>
       <li>
-        <Link
-
-        className="  bg-primary hover:bg-[#ff8482]"
-          href="/"
-          style={{
-            display: "inline-block",
-            width: "auto",
-            height: "auto",
-             
-            color: "#fff",
-            padding: "10px 50px",
-            borderRadius: "0",
-          }}
-        >
-          Login
-        </Link>
+        <Link className="relative md:left-56" href="/register">Register</Link>
       </li>
     </>
   );
@@ -75,13 +60,26 @@ const Header = () => {
         />
       </div>
       <div className="navbar-end hidden lg:flex">
-        <ul className="menu text-gray-500  font-semibold menu-horizontal px-1">
+        <ul className="menu w-[500px] text-gray-500  font-semibold menu-horizontal px-1">
           {navlinks}
         </ul>
       </div>
-      {/* <div className="navbar-end">
-        <a className="btn">Button</a>
-      </div> */}
+      <div className="navbar-end gap-10">
+        <Link
+          className=" bg-primary hover:bg-[#ff8482] "
+          href="/login"
+          style={{
+            display: "inline-block",
+            width: "auto",
+            height: "auto",
+            color: "#fff",
+            padding: "10px 25px",
+            borderRadius: "0",
+          }}
+        >
+          Login
+        </Link>
+      </div>
     </div>
   );
 };
