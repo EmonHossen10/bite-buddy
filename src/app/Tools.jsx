@@ -1,4 +1,5 @@
-import React from "react";
+import Image from "next/image";
+
 
 const Tools = () => {
   return (
@@ -6,7 +7,7 @@ const Tools = () => {
       <div className="w-6/12 mx-auto">
         <div className="card w-96 bg-gradient-to-r from-[#eceaea] to-[#ffffff] shadow-xl">
           <figure className="px-10 pt-10">
-            <img
+            <Image
               src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
               alt="Shoes"
               className="rounded-xl"
