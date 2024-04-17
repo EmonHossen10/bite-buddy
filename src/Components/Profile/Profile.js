@@ -7,11 +7,11 @@ const Profile = () => {
     <div>
       <div
         className="hero min-h-screen bg-gradient-to-r from-[#eceaea] to-[#ffffff] shadow-xl 
-        rounded-xl py-4"
+        rounded-xl pb-4"
       >
         <div className="hero-content flex-col lg:flex">
-         <h1 className="text-5xl font-bold text-gray-600">Profile!</h1>
-          <div className="text-center">
+         <h1 className="text-5xl font-bold text-gray-600 text-center">Profile!</h1>
+          <div>
             <div className="avatar">
               <div className="w-24 rounded-full">
                 <Image src="https://i.ibb.co/61fkXjD/Ema-Watt.jpg"
