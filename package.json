@@ -11,15 +11,13 @@
   "dependencies": {
     "next": "14.2.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-router-dom": "^6.22.3"
   },
   "devDependencies": {
-<<<<<<< HEAD
     "@swc/cli": "^0.3.12",
     "@swc/core": "^1.4.14",
-=======
     "daisyui": "^4.10.1",
->>>>>>> a4b8319d01040997b6c7f817c5f9f2ddb46433fa
     "eslint": "^8",
     "eslint-config-next": "14.2.1",
     "postcss": "^8",
