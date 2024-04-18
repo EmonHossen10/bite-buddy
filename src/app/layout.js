@@ -1,7 +1,12 @@
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
+import Header from "@/Components/layout/Header";
+import Footer from "@/Components/layout/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["100", "400", "500", "700"],
+});
 
 export const metadata = {
   title: "BiteBuddy || Home",
@@ -11,7 +16,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={roboto.className}>
+        <div className="max-w-5xl mx-auto">
+          <Header></Header>
+        </div>
+        <main>{children}</main>
+        <Footer></Footer>
+      </body>
     </html>
   );
 }

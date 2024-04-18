@@ -1,14 +1,22 @@
-import Image from "next/image";
-import Tools from "./Tools";
+ 
+import Profile from "@/Components/Profile/Profile";
+import Chef from "@/Components/layout/Chef";
+import Hero from "@/Components/layout/Hero";
+import HomeMenu from "@/Components/layout/HomeMenu";
+import OrderProcess from "@/Components/layout/OrderProcess";
+import OurWork from "@/Components/layout/OurWork";
 
 export default function Home() {
   return (
-    <main>
-      <h2>This is next app</h2>
-      <h2>This is next app 2</h2>
-      <h2>This is next app 3</h2>
-
-      <Tools></Tools>
-    </main>
+    <>
+      <main className="max-w-5xl mx-auto">
+        <Hero></Hero>
+        <OurWork></OurWork>
+        <HomeMenu></HomeMenu>
+        
+        <OrderProcess></OrderProcess>
+      </main>
+      <Chef></Chef>
+    </>
   );
 }
