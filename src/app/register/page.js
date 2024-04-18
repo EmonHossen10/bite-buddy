@@ -28,7 +28,7 @@ export default function Register() {
     }
 
     return (
-        <div className="grid grid-cols-5 relative">
+        <div className="grid grid-cols-1 md:grid-cols-5 relative">
             <div className="bg-white flex justify-center items-center col-span-2">
                 <div className="space-y-3 mt-24">
                     <h1 className="text-4xl font-bold">Welcome to <span className="text-primary">BiteBuddy!</span></h1>
@@ -36,9 +36,9 @@ export default function Register() {
                     <Image width={450} height={450} src='https://brandio.io/envato/iofrm/html/images/graphic4.svg' alt='register background'></Image>
                 </div>
             </div>
-                <Image  className="absolute ml-[500px] mt-[600px]" width={150} height={150} src={onion} alt='onion'></Image>
+                <Image  className="absolute md:ml-[500px] md:mt-[600px]" width={150} height={150} src={onion} alt='onion'></Image>
                 <Image  className="absolute" width={150} height={150} src={veg} alt='vegetable'></Image>
-                <Image  className="absolute ml-[1220px]" width={250} height={250} src={milk} alt='milk'></Image>
+                <Image  className="absolute lg:ml-[1220px]" width={250} height={250} src={milk} alt='milk'></Image>
             <div className="grid col-span-3 bg-[#44C97D]">
                 <section className="">
                     <div className="flex flex-col items-center justify-center  px-6 py-8 mx-auto lg:py-0 my-16">
