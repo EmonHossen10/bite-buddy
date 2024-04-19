@@ -1,4 +1,3 @@
- 
 import Profile from "@/Components/Profile/Profile";
 import Chef from "@/Components/layout/Chef";
 import Hero from "@/Components/layout/Hero";
@@ -13,7 +12,6 @@ export default function Home() {
         <Hero></Hero>
         <OurWork></OurWork>
         <HomeMenu></HomeMenu>
-        
         <OrderProcess></OrderProcess>
       </main>
       <Chef></Chef>

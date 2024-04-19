@@ -19,16 +19,13 @@ const Header = () => {
       <li>
         <Link href="/">Contact</Link>
       </li>
-
       <li>
-        <Link className="relative md:left-56" href="/register">
-          Register
-        </Link>
+        <Link href="/developer">Developer</Link>
       </li>
     </>
   );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 shadow-md   "    >
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -63,13 +60,13 @@ const Header = () => {
         />
       </div>
       <div className="navbar-end hidden lg:flex">
-        <ul className="menu  border w-[500px] text-gray-500  font-semibold menu-horizontal px-1">
+        <ul className="menu  w-[500px] text-gray-500  font-semibold menu-horizontal px-1">
           {navlinks}
         </ul>
       </div>
-      <div className="navbar-end gap-10">
+      <div className="navbar-end gap-10  ">
         <Link
-          className=" bg-primary hover:bg-[#ff8482] "
+          className=" bg-primary hover:bg-[#ff8482] absolute md:right-10 "
           href="/login"
           style={{
             display: "inline-block",
