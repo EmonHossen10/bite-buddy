@@ -8,7 +8,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 const Hero = () => {
   return (
     <>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4  ">
         <section className="flex flex-col-reverse md:flex-row items-center py-10 space-y-4 md:space-y-0 md:space-x-4">
           {/* text */}
           <div className="flex-1">
