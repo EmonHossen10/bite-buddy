@@ -31,14 +31,14 @@ export default function Register() {
         <div className="grid grid-cols-1 md:grid-cols-5 relative">
             <div className="bg-white flex justify-center items-center col-span-2">
                 <div className="space-y-3 mt-24">
-                    <h1 className="text-4xl font-bold">Welcome to <span className="text-primary">BiteBuddy!</span></h1>
-                    <p>Welcome to best food ordering app</p>
-                    <Image width={450} height={450} src='https://brandio.io/envato/iofrm/html/images/graphic4.svg' alt='register background'></Image>
+                    <h1 className="text-3xl md:text-4xl font-bold text-center md:text-left">Welcome to <span className="text-primary">BiteBuddy!</span></h1>
+                    <p className="text-center md:text-left">Welcome to best food ordering app</p>
+                    <Image className="px-10 md:px-0" width={450} height={450} src='https://brandio.io/envato/iofrm/html/images/graphic4.svg' alt='register background'></Image>
                 </div>
             </div>
-                <Image  className="absolute md:ml-[500px] md:mt-[600px]" width={150} height={150} src={onion} alt='onion'></Image>
-                <Image  className="absolute" width={150} height={150} src={veg} alt='vegetable'></Image>
-                <Image  className="absolute lg:ml-[1220px]" width={250} height={250} src={milk} alt='milk'></Image>
+                <Image  className="absolute mt-[370px] md:ml-[500px] md:mt-[670px] w-[50px] h-[60px] md:w-[150px] md:h-[160px]" src={onion} alt='onion'></Image>
+                <Image  className="absolute w-[90px] h-[110px] md:w-[150px] md:h-[230px]" src={veg} alt='vegetable'></Image>
+                <Image  className="absolute mt-[370px] md:mt-0 ml-[280px] lg:ml-[1220px] w-[80px] h-[190px] md:w-[250px] md:h-[450px]" src={milk} alt='milk'></Image>
             <div className="grid col-span-3 bg-[#44C97D]">
                 <section className="">
                     <div className="flex flex-col items-center justify-center  px-6 py-8 mx-auto lg:py-0 my-16">
